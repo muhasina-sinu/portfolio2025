@@ -540,7 +540,7 @@ footer {
     .hero {
         flex-direction: column;
         text-align: center;
-        padding: 6rem 1rem 2rem;
+        padding: 14rem 1rem 2rem;
     }
 
     .hero-content {
@@ -622,7 +622,43 @@ html {
     }
 }
 
-/* Toast Notification Styles */
+/* Mobile Navigation */
+.mobile-nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.mobile-nav-toggle:hover {
+    color: var(--accent-color);
+}
+
+.mobile-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--nav-bg);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 12px var(--shadow);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.mobile-nav-open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
 .toast {
     position: fixed;
     top: 20px;

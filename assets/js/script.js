@@ -29,7 +29,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const target = document.querySelector(this.getAttribute('href'));
 
         if (target) {
-            const headerOffset = 80; // Account for fixed header
+            // Use different offset for mobile vs desktop
+            const headerOffset = window.innerWidth <= 768 ? 150 : 80;
             const elementPosition = target.offsetTop;
             const offsetPosition = elementPosition - headerOffset;
 
@@ -180,6 +181,14 @@ function initMobileNav() {
 
     toggle.addEventListener('click', () => {
         nav.classList.toggle('mobile-nav-open');
+    });
+
+    // Close menu when clicking on menu items
+    const menuItems = nav.querySelectorAll('a');
+    menuItems.forEach(item => {
+        item.addEventListener('click', () => {
+            nav.classList.remove('mobile-nav-open');
+        });
     });
 
     // Show mobile toggle on small screens

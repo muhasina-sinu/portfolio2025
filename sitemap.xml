@@ -3,17 +3,7 @@
   <url>
     <loc>https://muhasinamujeeb.in/</loc>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://muhasinamujeeb.in/about.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://muhasinamujeeb.in/projects.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://muhasinamujeeb.in/services.html</loc>
-    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2025-11-20</lastmod>
   </url>
 </urlset>

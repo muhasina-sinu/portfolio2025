@@ -514,6 +514,23 @@ header {
     padding-top: 1rem;
 }
 
+.project-deployment {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.deploy-label {
+    font-size: 0.78rem;
+    color: var(--text-light);
+    font-weight: 500;
+    white-space: nowrap;
+}
+
 .btn-sm {
     padding: 0.5rem 1.25rem;
     font-size: 0.9rem;

@@ -1038,6 +1038,14 @@ html {
    CHATBOT STYLES
    ===================================================== */
 
+/* Hide chatbot UI globally (temporary). To restore, remove this block or toggle the rule. */
+#chatbot-container,
+.chatbot-container {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
+
 .chatbot-container {
     position: fixed;
     bottom: 24px;
